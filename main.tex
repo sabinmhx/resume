@@ -1,0 +1,173 @@
+%-------------------------
+% Resume in Latex
+% Author : Sabin Maharjan
+%------------------------
+
+\input{glyphtounicode}
+\pdfgentounicode=1
+
+\documentclass[a4paper]{article}
+    \usepackage{fullpage}
+    \usepackage{amsmath}
+    \usepackage{amssymb}
+    \usepackage{textcomp}
+    \usepackage{tabularx}
+    \usepackage[utf8]{inputenc}
+    \usepackage[T1]{fontenc}
+    \textheight=10in
+    \pagestyle{empty}
+    \raggedright
+    \usepackage[left=0.8in,right=0.8in,bottom=0.8in,top=0.8in]{geometry}
+
+    %\renewcommand{\encodingdefault}{cg}
+%\renewcommand{\rmdefault}{lgrcmr}
+
+\def\bull{\vrule height 0.8ex width .7ex depth -.1ex }
+
+% DEFINITIONS FOR RESUME %%%%%%%%%%%%%%%%%%%%%%%
+
+\newcommand{\area} [2] {
+    \vspace*{-9pt}
+    \begin{verse}
+        \textbf{#1}   #2
+    \end{verse}
+}
+
+\newcommand{\lineunder} {
+    \vspace*{-8pt} \\
+    \hspace*{-18pt} \hrulefill \\
+}
+
+\newcommand{\header} [1] {
+    {\hspace*{-18pt}\vspace*{6pt} \textsc{#1}}
+    \vspace*{-6pt} \lineunder
+}
+
+\newcommand{\employer} [3] {
+    { \textbf{#1} (#2)\\ \underline{\textbf{\emph{#3}}}\\  }
+}
+
+\newcommand{\contact} [3] {
+    \vspace*{-10pt}
+    \begin{center}
+        {\Huge \scshape {#1}}\\
+        #2 \\ #3
+    \end{center}
+    \vspace*{-8pt}
+}
+
+\newenvironment{achievements}{
+    \begin{list}
+        {$\bullet$}{\topsep 0pt \itemsep -2pt}}{\vspace*{4pt}
+    \end{list}
+}
+
+\newcommand{\schoolwithcourses} [4] {
+    \textbf{#1} #2 $\bullet$ #3\\
+    #4 \\
+    \vspace*{5pt}
+}
+
+\newcommand{\school} [4] {
+    \textbf{#1} #2 $\bullet$ #3\\
+    #4 \\
+}
+% END RESUME DEFINITIONS %%%%%%%%%%%%%%%%%%%%%%%
+
+    \begin{document}
+\vspace*{-40pt}
+
+    
+
+%==== Profile ====%
+\vspace*{-10pt}
+\begin{center}
+	{\Huge \scshape {Sabin Maharjan}}\\
+	sabinmhx@gmail.com $\cdot$ https://sabin-maharjan.com.np $\cdot$ https://linkedin.com/in/sabinmhj/\\
+\end{center}
+
+
+
+%==== Experience ====%
+\header{Education}
+\vspace{1mm}
+
+\textbf{Tribhuvan University} \hfill Kathmandu, NP\\
+\textit{Bachelor of Science; Major: Computer Science; Grade: Distinction} \hfill Nov 2019 - Nov 2023\\
+\vspace{-1mm}
+\
+
+\textbf{National School of Sciences} \hfill Kathmandu, NP\\
+\textit{High School Diploma; Major: Biology \& Mathematics; Grade: A} \hfill Jul 2017 - Aug 2019\\
+\vspace{-1mm}
+\
+
+\textbf{National United School} \hfill Kathmandu, NP\\
+\textit{Secondary School; Major: Computer Science \& Mathematics; Grade: A+} \hfill Jab 2007 - Jun 2017\\
+\vspace{-1mm}
+\
+
+
+%==== Skills ====%
+\header{Skills}
+\begin{tabularx}{\textwidth}{ l X } 
+	Programming Languages: & Java, Kotlin, Dart, Python, C\#      \\
+	Libraries \& Frameworks:  & Flutter, Django, .NET  \\
+    Database Languages:  & MySQL, MS SQL, Oracle SQL, PostgreSQL  \\
+    Tools \& Platforms:  & Git, Jenkins, Docker, AWS, Azure, Firebase, Netlify, Vercel \\
+\end{tabularx}
+\vspace{2mm}
+
+%==== Projects ====%
+\header{Projects}
+{\textbf{Baadal}}\hfill https://github.com/sabinmhx/baadal\\
+\textit{Weather App in Flutter}
+\begin{itemize} \itemsep 1pt
+	\item Developed a weather application using the OpenWeather API to provide real-time weather information to users.   
+	\item Developed a user-friendly weather application with an intuitive interface.
+\end{itemize}
+
+\vspace*{2mm}
+
+{\textbf{Pokefluter}}\hfill https://github.com/sabinmhx/pokeflutter\\
+\textit{Pokemon App in Flutter}
+\begin{itemize} \itemsep 1pt
+	\item Utilized Flutter's UI components to create an intuitive and visually appealing user interface, following Material Design guidelines.  
+	\item Integrated the Pokémon API to fetch and display Pokémon data, including names, images, types, and abilities.
+\end{itemize}
+\vspace*{2mm}
+
+{\textbf{Noter}}\hfill https://github.com/sabinmhx/noter\\
+\textit{Note Taking App in Kotlin}
+\begin{itemize} \itemsep 1pt
+	\item Proficiently utilized Kotlin to implement data binding and MVVM. 
+	\item Leveraged Kotlin Coroutines to seamlessly integrate asynchronous operations and enhance the responsiveness of the Android app.
+\end{itemize}
+\vspace*{2mm}
+
+{\textbf{Sortify}}\hfill https://github.com/sabinmhx/sortify\\
+\textit{Sorting Algorithm Visualizer in Java}
+\begin{itemize} \itemsep 1pt
+	\item Integrated multiple sorting algorithms, including Bubble Sort, Insertion Sort, Selection Sort, Merge Sort, Shell Sort, and Quick Sort.
+	\item Added user controls to adjust the speed of the visualization, enabling users to observe the sorting process at different rates.
+\end{itemize}
+\vspace*{2mm}
+
+
+{\textbf{KitabPremi}}\hfill https://github.com/sabinmhx/kitabpremi\\
+\textit{Online Bookstore Website}
+\begin{itemize} \itemsep 1pt
+	\item Built an ecommerce web project for buying and selling books using HTML, CSS, JS, PHP and MySQL.  
+	\item Integrated payment gateway with Paypal Sandbox using Paypal API.
+\end{itemize}
+\vspace*{2mm}
+
+%==== Awards ====%
+\header{Awards}
+\textbf{Mahatma Gandhi Scholarship for High School} \hfill 2017\\
+\vspace*{2mm}
+\textbf{NIS Principal Scholarship for High School} \hfill 2017\\
+\vspace*{2mm}
+
+\ 
+\end{document}
