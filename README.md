@@ -3,7 +3,7 @@
 This resume template is designed for people in tech industry and it utilizes the base LaTeX templates and fonts, making it easy to install and update. The template includes well-documented sections, ensuring easy customization.
 
 ## Preview
-![Sabin Maharjan Resume](outputs/SabinMaharjan-Resume.png)
+![Sabin Maharjan Resume](outputs/Sabin-Maharjan-Resume.png)
 
 
 ## Usage
