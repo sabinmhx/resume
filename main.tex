@@ -6,7 +6,7 @@
 \input{glyphtounicode}
 \pdfgentounicode=1
 
-\documentclass[a4paper]{article}
+\documentclass[12pt]{article}
     \usepackage{fullpage}
     \usepackage{amsmath}
     \usepackage{amssymb}
@@ -14,6 +14,7 @@
     \usepackage{tabularx}
     \usepackage[utf8]{inputenc}
     \usepackage[T1]{fontenc}
+    \usepackage[hidelinks]{hyperref}
     \textheight=10in
     \pagestyle{empty}
     \raggedright
@@ -38,7 +39,7 @@
     \hspace*{-18pt} \hrulefill \\
 }
 
-\newcommand{\header} [1] {
+\newcommand{\header} [1] {   
     {\hspace*{-18pt}\vspace*{6pt} \textsc{#1}}
     \vspace*{-6pt} \lineunder
 }
@@ -74,94 +75,89 @@
 }
 % END RESUME DEFINITIONS %%%%%%%%%%%%%%%%%%%%%%%
 
-    \begin{document}
+\begin{document}
 \vspace*{-40pt}
 
-    
 
 %==== Profile ====%
 \vspace*{-10pt}
 \begin{center}
-	{\Huge \scshape {Sabin Maharjan}}\\
-	sabinmhx@gmail.com $\cdot$ https://sabin-maharjan.com.np $\cdot$ https://linkedin.com/in/sabinmhj/\\
+    \textbf{\Huge{Sabin Maharjan}}\\
+    \vspace{2mm}
+    +977 9803273858 $|$ 
+    \href{mailto:sabinmhx@gmail.com}{sabinm977@gmail.com} $|$ 
+    \href{https://linkedin.com/in/sabinmhx}{linkedin.com/in/sabinmhx} $|$ 
+    \href{https://github.com/sabinmhx}{github.com/sabinmhx} \\
 \end{center}
-
+\vspace{3mm}
 
 
 %==== Experience ====%
-\header{Education}
+\vspace{3mm}
+\header{\large{Experience}}
+
+\textbf{Flutter Developer} \hfill Kupondole, Lalitpur, Nepal\\
+\textit{Miracle Interface Pvt. Ltd} \hfill Jun 2024 – Present\\
+\begin{itemize} \itemsep 1pt
+    \item Built a web application for managing bank statements, tailored for abroad study, using GetX for state management and Firebase for storing data.
+    \item Developed an art app that allows artists to upload artwork and others to view it, creating a social media-like platform for art.
+\end{itemize}
+
+\textbf{Mobile App Intern} \hfill Durbarmarg, Kathmandu, Nepal\\
+\textit{Vanilla Transtechnor Pvt. Ltd} \hfill Jan 2024 – Apr 2024\\
+\begin{itemize} \itemsep 1pt
+    \item Developed a comprehensive web app for device registration, management, and user authentication, ensuring secure and efficient handling of device data.
+    \item Applied Stacked architecture and Provider for efficient code and state management.
+\end{itemize}
+
+\vspace{-1mm}
+\
+
+
+%==== Education ====%
+\header{\large{Education}}
 \vspace{1mm}
 
-\textbf{Tribhuvan University} \hfill Kathmandu, NP\\
-\textit{Bachelor of Science; Major: Computer Science; Grade: Distinction} \hfill Nov 2019 - Nov 2023\\
+\textbf{Tribhuvan University} \hfill Kathmandu, Nepal\\
+\textit{Bachelor of Science; Major: CS \& IT; Grade: Distinction} \hfill Nov 2019 - Nov 2023\\
 \vspace{-1mm}
 \
-
-\textbf{National School of Sciences} \hfill Kathmandu, NP\\
-\textit{High School Diploma; Major: Biology \& Mathematics; Grade: A} \hfill Jul 2017 - Aug 2019\\
-\vspace{-1mm}
-\
-
-\textbf{National United School} \hfill Kathmandu, NP\\
-\textit{Secondary School; Major: Computer Science \& Mathematics; Grade: A+} \hfill Jan 2007 - Jun 2017\\
-\vspace{-1mm}
-\
-
 
 %==== Skills ====%
-\header{Skills}
+\header{\large{Skills}}
 \begin{tabularx}{\textwidth}{ l X } 
-	Programming Languages: & Java, Python, Dart, Kotlin, C\#      \\
-	Libraries \& Frameworks:  & Spring Boot, Flutter, Django, .NET  \\
-    Databases:  & MySQL, PostgreSQL, MS SQL, Oracle SQL  \\
-    Tools \& Platforms:  & Git, Docker, Firebase, Netlify, Vercel \& Jira \\
+	Programming Languages: & Dart, Java \\
+	Libraries \& Frameworks:  & Flutter, Spring Boot \\
+    Databases:  & MySQL, PostgreSQL, MongoDB \\
+    Tools \& Platforms:  & Git, Docker, Firebase \\
 \end{tabularx}
 \vspace{2mm}
 
+
 %==== Projects ====%
-\header{Projects}
+\header{\large{Projects}}
 
-{\textbf{Bharnaa}}\hfill https://github.com/sabinmhx/bharnaa\\
-\textit{Online Medical Appointment System in Java}
+{\textbf{Pokeflutter}} \
+\hfill \href{https://github.com/sabinmhx/pokeflutter} {\textit{GitHub}}\\
+\textit{Pokemon App in Flutter}
 \begin{itemize} \itemsep 1pt
-	\item Proficiently utilized Java Spring Boot, Spring Data JPA, Spring Security, Hibernate, PostgreSQL.
-    \item Implemented secure user authentication and HIPAA-compliant data protection.
-    \item Executed over 150 test cases, resulting in a 98 \% defect identification rate.
+	\item Utilized Flutter's UI components to create an intuitive and visually appealing user interface, following Material Design guidelines.  
+	\item Integrated the Pokémon API to fetch and display Pokémon data, including names, images, types, and abilities.
 \end{itemize}
 \vspace*{2mm}
 
-{\textbf{Sortify}}\hfill https://github.com/sabinmhx/sortify\\
-\textit{Sorting Algorithm Visualizer in Java}
+{\textbf{Your Garbage, Your Responsibility (YGYR)}}
+\hfill \href{https://devfolio.co/projects/your-garbage-your-responsibility-ygyr-c77e}{\textit{Devfolio}} | \href{https://github.com/xentixar/ygyr}{\textit{GitHub}}\\ \textit{Deerhack Hackathon 2024}
 \begin{itemize} \itemsep 1pt
-	\item Integrated multiple sorting algorithms, including Bubble Sort, Insertion Sort, Selection Sort, Merge Sort, Shell Sort, and Quick Sort.
-	\item Added user controls to adjust the speed of the visualization, enabling users to observe the sorting process at different rates.
+	\item Created an app to reduce waste mismanagement and educate people about recycling, making it accessible to a wider audience.
+	\item Contributed to the project as the Flutter developer, working with a team of 5 participants.
 \end{itemize}
 \vspace*{2mm}
 
-{\textbf{Attendance}}\hfill https://github.com/sabinmhx/attendance\\
-\textit{Attendance System with Face Recognition in Python}
-\begin{itemize} \itemsep 1pt
-	\item Developed a Python-based attendance system to streamline the process of tracking student attendance in college classes.
-	\item Utilized OpenCV's deep learning-based face detection model, achieving an impressive 95\% accuracy rate in detecting student faces.
-    \item Implemented Haar Cascade classifiers to detect specific facial features, such as eyes and mouths, enhancing the accuracy of face detection even in challenging scenarios.
-\end{itemize}
+
+%==== Trainings ====%
+\header{\large{Trainings}}
+\href{https://www.sabin-maharjan.com.np/assets/Advanced-Java-Course-Sikaai-IT.pdf}{Advanced Java Course from Sikaai-IT} \hfill April 10, 2023 - June 10, 2023\\
 \vspace*{2mm}
 
-{\textbf{KitabPremi}}\hfill https://github.com/sabinmhx/kitabpremi\\
-\textit{Online Bookstore Website in PHP}
-\begin{itemize} \itemsep 1pt
-	\item Built an e-commerce web project for buying and selling books using HTML, CSS, JS, PHP and MySQL.  
-	\item Integrated payment gateway with Paypal Sandbox using Paypal API.
-    \item Incorporated the DomPDF library allowing administrators to generate professional invoices for book orders.
-\end{itemize}
-\vspace*{2mm}
-
-%==== Awards ====%
-\header{Awards}
-{Mahatma Gandhi Scholarship for High School} \hfill 2017\\
-\vspace*{2mm}
-{NIST Principal Scholarship for High School} \hfill 2017\\
-\vspace*{2mm}
-
-\ 
 \end{document}
